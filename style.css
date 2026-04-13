@@ -4,98 +4,60 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#home .foto-kiri {
-    display: flex;
-    align-items: flex-start;
-    margin-top: -200px;           /* Turunin jadi -30px dulu */
-    margin-bottom: 10px;
+.navbar-custom {
+    background-color: #a57070;
+}
+.navbar-custom .nav-link:hover {
+    background-color: #f07f7f;
+    border-radius: 5px;
 }
 
-#home .foto-kiri img {
-    width: 250px;                 /* Pake CSS, jangan di HTML */
-    height: 420px;
+h1, h2 { color: #f07f7f; }
+p, li, b { color: #c46a6a; }
+
+.foto-home img {
+    width: 220px;
+    height: 340px;
     border-radius: 15px;
-    border: 3px solid #f07f7f;
-    margin-right: 40px;
-    object-fit: cover;            /* Biar fotonya rapi */
-}
-
-/* Teks pertama di HOME */
-#home .foto-kiri + p {
-    margin-top: 0;
-    text-align: left;
-}
-
-/* FOTO KHUSUS ABOUT (kalo mau beda) */
-#about .foto-kiri {
-    display: flex;
-    justify-content: center;      /* Tengahin foto di about */
-    margin-top: 20px;
-}
-
-#about .foto-kiri img {
-    width: 200px;                 /* Ukuran lebih kecil buat about */
-    height: 200px;
-    border-radius: 50%;           /* Bikin bulat di about */
     border: 3px solid #f07f7f;
     object-fit: cover;
 }
 
-.navbar {
-    background-color: #a57070;
-    padding: 15px;
-    text-align: center;
+.foto-bulat img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #f07f7f;
+    object-fit: cover;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
+.card-custom {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px !important;
 }
 
-.navbar a:hover {
+.list-item-custom {
+    background: transparent;
+    color: #c46a6a;
+}
+
+.alert-custom {
+    background-color: #f9d6d6;
+    color: #c46a6a;
+    border: 1px solid #f07f7f;
+}
+
+.badge-custom {
     background-color: #f07f7f;
+    color: white;
 }
 
-.content {
-    padding: 50px 20px;
-    text-align: center;
-}
 
-#home, #about {
-    min-height: 400px;
+.btn-pink {
+    background-color: #f07f7f;
+    color: white;
 }
-
-#about {
-    display: none;
-}
-
-h1 {
-    color: #f07f7f;
-    font-size: 36px;
-}
-
-h2 {
-    color: #f07f7f;
-    font-size: 30px;
-}
-
-p {
-    color: #f07f7f;
-    font-size: 18px;
-    max-width: 600px;
-    margin: 20px auto;
-    line-height: 1.6;
-}
-
-ul {
-    color: #f07f7f;
-    max-width: 400px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-li {
-    margin: 10px 0;
+.btn-pink:hover {
+    background-color: #e06060;
+    color: white;
 }
